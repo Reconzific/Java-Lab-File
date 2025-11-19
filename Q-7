@@ -1,0 +1,17 @@
+import java.sql.*;
+
+class DBInsertUpdate {
+    public static void main(String[] args) throws Exception {
+
+        Class.forName("com.mysql.cj.jdbc.Driver");
+
+        Connection con = DriverManager.getConnection(
+            "jdbc:mysql://localhost:3306/test", "root", "Backup@11");
+
+        Statement st = con.createStatement();
+        st.executeUpdate("INSERT INTO students VALUES(1,'Amit',80)");
+        st.executeUpdate("UPDATE students SET marks=90 WHERE id=1");
+
+        con.close();
+    }
+}
