@@ -1,7 +1,5 @@
 class Demo {
     public static void main(String[] args) {
-
-        // Data types
         int a = 10;
         double d = 5.5;
         char c = 'X';
@@ -24,10 +22,10 @@ class Demo {
             System.out.println(i);
 
         // while loop
-        int i = 1;
-        while (i <= 5) {
-            System.out.println("W" + i);
-            i++;
+        int j = 1;
+        while (j <= 5) {
+            System.out.println("W" + j);
+            j++;
         }
     }
 }
