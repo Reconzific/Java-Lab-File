@@ -1,0 +1,23 @@
+import java.awt.*;
+import java.awt.event.*;
+
+class ColorChange extends Frame implements ActionListener {
+    Button b;
+
+    ColorChange() {
+        b = new Button("Change Color");
+        add(b);
+        b.addActionListener(this);
+        setSize(300,300);
+        setLayout(new FlowLayout());
+        setVisible(true);
+    }
+
+    public void actionPerformed(ActionEvent e) {
+        setBackground(Color.cyan);
+    }
+
+    public static void main(String[] args) {
+        new ColorChange();
+    }
+}
